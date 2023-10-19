@@ -11,7 +11,27 @@ $secondary:#8d8a8c;
 //
 //}
 
-
-.btn-group.gap-0.btn{
-    justify-content: space-between;
+// Slide-carousel index
+.carousel-caption-index{
+    bottom: 80px;
+    font-weight: 700;
 } 
+
+.carousel-caption-index h5{
+    font-size: 100px;
+    font-weight: 700;
+} 
+
+.carousel-caption-index p{
+min-height: 80px;
+} 
+
+.slider-btn .btn{
+    background-color: $primary;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+} 
+
+
+
+
