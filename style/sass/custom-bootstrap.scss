@@ -1,16 +1,45 @@
 //cutsom_bootstrap.scss
 
-$primary: #c9c5c7;
-$secondary:#8d8a8c;
+$primary: #f7f5f2;
+$secondary: rgb(215, 180, 2);
+
+$text-active: black;
+$text-hover: rgb(215, 180, 2);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4rem,
+  3: 3rem,
+  4: 2rem,
+  5: 1.5rem,
+  6: 1rem
+);
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// *********************************************************
+// Bouton ajouter au panier
+.a .card .btn .btn{
+    background-color: $primary;
+    padding: 1rem 3rem;
+    color: $text-active;
+} 
 
-//Exemple de personnalisation
-//.test{
-//
-//}
+.a .card .btn .btn:hover{
+    background-color: $accent;
+    color: $primary;
+} 
 
-.carousel-caption{
-    margin-top: 5px;
-}
+// *********************************************************
+// Bouton ajouter au panier
+.a .card .btn .btn{
+    background-color: $primary;
+    padding: 1rem 3rem;
+    color: $text-active;
+} 
+
+.a .card .btn .btn:hover{
+    background-color: $accent;
+    color: $primary;
+} 
