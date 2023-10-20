@@ -1,15 +1,22 @@
 //cutsom_bootstrap.scss
 
-$primary: #c9c5c7;
-$secondary:#8d8a8c;
+$primary: #f7f5f2;
+$secondary: rgb(215, 180, 2);
+
+$text-active: black;
+$text-hover: rgb(215, 180, 2);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4rem,
+  3: 3rem,
+  4: 2rem,
+  5: 1.5rem,
+  6: 1rem
+);
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
-
-//Exemple de personnalisation
-//.test{
-//
-//}
 
 // Slide-carousel index
 .carousel-caption-index{
@@ -17,21 +24,77 @@ $secondary:#8d8a8c;
     font-weight: 700;
 } 
 
-.carousel-caption-index h5{
-    font-size: 100px;
-    font-weight: 700;
-} 
-
 .carousel-caption-index p{
-min-height: 80px;
+    min-height: 80px;
 } 
 
 .slider-btn .btn{
     background-color: $primary;
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 1rem 3rem;
+} 
+
+.slider-btn .btn:hover{
+    background-color: $accent;
+    color: $primary;
 } 
 
 
 
 
+// Link header
+.nav-link:hover{
+    color: $secondary;
+} 
+
+
+
+
+
+// Link main
+.card-body h3{
+    color: $text-active;
+} 
+
+.card-body h3:hover{
+    color: $secondary;
+} 
+
+
+
+// ****************************************************************
+// Link footer
+.footer-link .text-body p{
+    color: $secondary;
+} 
+
+.footer-link .text-body p:hover{
+    color: $secondary;
+} 
+
+.footer-link .text-decoration-none{
+    color: $text-active;
+} 
+// ****************************************************************
+
+
+
+
+// image texture - les nouveautés
+.bg-img-news{
+    background-image: url(/img/pawel-czerwinski-SlBmEVU2y-A-unsplash.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+
+// image texture - réseaux sociaux
+.bg-img-social{
+    background-image: url(/img/pawel-czerwinski-SlBmEVU2y-A-unsplash.jpg);
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
