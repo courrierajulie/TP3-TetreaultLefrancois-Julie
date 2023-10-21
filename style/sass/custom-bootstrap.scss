@@ -2,9 +2,8 @@
 
 $primary: #f7f5f2;
 $secondary: rgb(215, 180, 2);
-
 $text-active: black;
-$text-hover: rgb(215, 180, 2);
+
 
 $display-font-sizes: (
   1: 5rem,
@@ -18,28 +17,20 @@ $display-font-sizes: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-// *********************************************************
-// Bouton ajouter au panier
-.a .card .btn .btn{
+.card-body .btn{
     background-color: $primary;
-    padding: 1rem 3rem;
-    color: $text-active;
+
+    &:hover{
+        background-color: $secondary;
+        color: $primary;
+    } 
 } 
 
-.a .card .btn .btn:hover{
-    background-color: $accent;
-    color: $primary;
+
+.accordion-button{
+
+    &:hover{
+        color: $secondary;
+    } 
 } 
 
-// *********************************************************
-// Bouton ajouter au panier
-.a .card .btn .btn{
-    background-color: $primary;
-    padding: 1rem 3rem;
-    color: $text-active;
-} 
-
-.a .card .btn .btn:hover{
-    background-color: $accent;
-    color: $primary;
-} 
