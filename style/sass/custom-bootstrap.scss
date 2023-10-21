@@ -4,7 +4,8 @@ $primary: #f7f5f2;
 $secondary: rgb(215, 180, 2);
 
 $text-active: black;
-$text-hover: rgb(215, 180, 2);
+
+
 
 $display-font-sizes: (
   1: 5rem,
@@ -16,67 +17,51 @@ $display-font-sizes: (
 );
 
 
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Slide-carousel index
+
 .carousel-caption-index{
     bottom: 80px;
     font-weight: 700;
-} 
 
-.carousel-caption-index p{
+    p{
     min-height: 80px;
-} 
+    } 
 
-.slider-btn .btn{
-    background-color: $primary;
-    padding: 1rem 3rem;
-} 
+        .slider-btn .btn{
+        background-color: $primary;
+        padding: 1rem 3rem;
 
-.slider-btn .btn:hover{
-    background-color: $accent;
-    color: $primary;
-} 
-
-
+        &:hover{
+            background-color: $accent;
+            color: $primary;
+        }
+    }
+}
 
 
 // Link header
-.nav-link:hover{
-    color: $secondary;
+.nav-link{
+    &:hover{
+        color: $secondary;
+    } 
 } 
-
-
-
 
 
 // Link main
-.card-body h3{
+.card-body{
+    h3{
     color: $text-active;
+    } 
+
+    h3{
+        &:hover{
+        color: $secondary;
+        } 
+    } 
 } 
-
-.card-body h3:hover{
-    color: $secondary;
-} 
-
-
-
-// ****************************************************************
-// Link footer
-.footer-link .text-body p{
-    color: $secondary;
-} 
-
-.footer-link .text-body p:hover{
-    color: $secondary;
-} 
-
-.footer-link .text-decoration-none{
-    color: $text-active;
-} 
-// ****************************************************************
-
-
 
 
 // image texture - les nouveautés
