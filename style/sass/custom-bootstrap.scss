@@ -17,6 +17,7 @@ $display-font-sizes: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Boutons Ajouter au panier (page product.html)
 .card-body .btn{
     background-color: $primary;
 
@@ -27,6 +28,7 @@ $display-font-sizes: (
 } 
 
 
+// Accordéon (page product.html)
 .accordion-button{
 
     &:hover{
@@ -34,3 +36,13 @@ $display-font-sizes: (
     } 
 } 
 
+
+// Mots des créateurs (page product.html)
+.bg-img-creation{
+        background-image: url(/img/pawel-czerwinski-SlBmEVU2y-A-unsplash.jpg);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
