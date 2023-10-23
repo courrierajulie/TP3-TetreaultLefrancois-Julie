@@ -19,7 +19,6 @@
 						<div class="col">
 							<div class="banner-top d-flex align-items-center text-center text-light">
 								<img class="me-3" src="img/phone-logo.png" width="25" height="25" alt="icone de telephone"><a href="tel:+01234567890">+1 (666) 666-6666</a>
-								<div></div>
 								<p class="m-3"> 123 chemin, Saguenay (Canada)</p>
 							</div>
 						</div>
@@ -66,10 +65,11 @@
 							</li>
 						</ul>
 
-						<a href="#" class="btn"></a>
+						<a href="#" class="btn">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
 							<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
-						</svg>	
+						</svg>
+						</a>	
 					</div>
 				</nav>
 			</div>
@@ -179,7 +179,17 @@
 					<div class="col-8">
 						<div class="carousel-inner container d-flex justify-content-center mt-5">
 							<div class="carousel-item active">
-								<img src="img/josh-hemsley-unsplash.jpg" height="300" class="d-block w-50" alt="Cadres disposés sur un mur">
+								<img id="imagejs" src="img/josh-hemsley-unsplash.jpg" height="300" class="d-block w-50" alt="Cadres disposés sur un mur" onclick="changeImage()">
+							<script>
+								function changeImage(){
+									let displayImage = document.getElementById('imagejs')
+									if(displayImage.src.match = ('img/josh-hemsley-unsplash.jpg')){
+									displayImage.src = 'img/josh-hemsley-vn-unsplash.jpg'
+									} else {
+										displayImage.src = 'img/josh-hemsley-unsplash.jpg'
+									}
+								} 
+							</script>
 							</div>
 							<div class="carousel-item">
 								<img src="img/ismail-ahmed-unsplash.jpg" height="300" class="d-block w-50" alt="T-shirt noir graphique">
@@ -266,6 +276,7 @@
 		</section>
 	</footer>
 
+	<script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
