@@ -2,10 +2,8 @@
 
 $primary: #f7f5f2;
 $secondary: rgb(215, 180, 2);
-
+$accent: rgb(198, 108, 5);
 $text-active: black;
-
-
 
 $display-font-sizes: (
   1: 5rem,
@@ -17,8 +15,37 @@ $display-font-sizes: (
 );
 
 
-
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Boutons Ajouter au panier (page product.html)
+.card-body .btn-shop{
+    background-color: $primary;
+
+    &:hover{
+        background-color: $secondary;
+        color: $primary;
+    } 
+} 
+
+
+// Accordéon (page product.html)
+.accordion-button{
+
+    &:hover{
+        color: $secondary;
+    } 
+} 
+
+
+// Mots des créateurs (page product.html)
+.bg-img-creation{
+        background-image: url(/img/pawel-czerwinski-SlBmEVU2y-A-unsplash.jpg);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 
 // Slide-carousel index
 

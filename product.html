@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>TP3 Julie Tétreault-Lefrançois - E-commerce</title>
+    <meta name="description" content="TP3 dans le cadre du cours Intégration des inferfaces web 2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/css/custom-bootstrap.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+		<div class="row">
+			<div class="container-fluid px-5 d-flex justify-content-between bg-dark bg-gradient">
+				<div class="col row-cols-row-cols-lg-1 g-4">
+					<div class="justify-content-center">
+						<div class="col">
+							<div class="banner-top d-flex align-items-center text-center text-light">
+								<img class="me-3" src="img/phone-logo.png" width="25" height="25" alt="icone de telephone"><a href="tel:+01234567890">+1 (666) 666-6666</a>
+								<p class="m-3"> 123 chemin, Saguenay (Canada)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-group gap-0 btn">
+					<button type="button" class="btn btn-outline-primary">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+							<path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"></path>
+							<path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"></path>
+						</svg>
+						<span class="visually-hidden">Button</span>
+					</button>
+					<button type="button" class="btn btn-outline-primary">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+							<path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"></path>
+							<path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"></path>
+						</svg>
+					<span class="visually-hidden">Button</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-body-secondary">
+			<div class="container-fluid px-5">
+				<nav class="navbar navbar-expand-xl">
+					<a class="navbar-brand d-flex align-items-center" href="index.html">
+						<h1><img class="me-5" src="img/salenjoual-logo.png" width="100" height="50" alt="Logo de l'entreprise."></h1>
+					</a>				
+										
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+						<ul class="navbar-nav display-6">
+							<li class="nav-item">
+								<a class="nav-link active fw-bold" href="index.html">Accueil</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link fw-bold" href="product.html">Produits</a>
+							</li>
+						</ul>
+
+						<a href="#" class="btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+							<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+						</svg>
+						</a>	
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+ 
+
+    <main>
+        <div class="banner-product">
+            <div class="banner-cover">
+                <img src="img/t-shirt-sal-en-joual.png" height="600" class="d-block w-100" alt="T-shirt SAL'EN JOUAL">
+                <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+        </div>
+
+        <section id="adult">
+            <div class="bg-body-secondary p-5">
+                <div class="row">
+                    <div class="col container-fluid text-center pt-5">
+                        <h2 class="display-6 fw-bold">Adulte</h2>
+                        <p class="display-5">Chandails unisexes</p>
+                    </div>
+                </div>
+
+                <div class="container p-5">
+                    <div class="row justify-content-center row-cols-md-3 row-cols-lg-5 g-4">
+                        <div class="col">
+                            <div class="card"> 
+                                <img src="img/david-wimmer-NQSYNwqIcrQ-unsplash.jpg" class="card-img-top" alt="T-shirt rose graphique de mort">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h5>25,99 $</h5>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/ian-dooley-FoF0w-d6Z74-unsplash.jpg" class="card-img-top" alt="T-shirt noir STAY WILD">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>25,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/logan-weaver-lgnwvr-BT3yED9xUQk-unsplash.jpg" class="card-img-top" alt="T-shirt blanc 21">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>25,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/brooke-cagle-4rgGY-Aa308-unsplash.jpg" class="card-img-top" alt="T-shirt fleuris">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>29,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/ian-dooley-C6BrEIucDDU-unsplash.jpg" class="card-img-top" alt="T-shirt noir peace">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>29,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="child">
+           <div class="bg-body-secondary p-5">
+                <div class="row">
+                    <div class="col container-fluid text-center pt-5">
+                        <h2 class="display-6 fw-bold">Enfants</h2>
+                        <p class="display-5">Chandails unisexes</p>
+                    </div>
+                </div>
+
+                <div class="container p-5">
+                    <div class="row justify-content-center row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/old-youth-EaEMK2xuHdA-unsplash.jpg" class="card-img-top" alt="T-shirt planète DON'T SWEAT">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>20,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/laura-kennedy-oPjgA-VTtxo-unsplash.jpg" class="card-img-top" alt="T-shirt signature">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>20,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/quentin-touvard-N8zxLw9cYP8-unsplash.jpg" class="card-img-top" alt="T-shirt READY TO GO">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>20,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/wander-fleur-TFfWuSDzDE8-unsplash.jpg" class="card-img-top" alt="T-shirt STAR WARS">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>22,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="accessories">
+            <div class="bg-body-secondary p-5">
+                <div class="row">
+                    <div class="col container-fluid text-center pt-5">
+                        <h2 class="display-6 fw-bold">Accessoires</h2>
+                        <h4 class="display-5">Foulards, Patchs & prints</h4>
+                    </div>
+                </div>
+
+                <div class="container p-5">
+                    <div class="row justify-content-center row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/zeta-mponatsou-unsplash.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>12,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/angela-pencheva-ktYfccpLuSk-unsplash.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>15,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/jonathan-cooper-unsplash.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="text-uppercase fw-bold mb-2">Modèle</h3>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <h4>25,99 $</h4>
+                                    <button class="buttonjs btn-shop btn d-flex justify-content-center">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bottom-product">
+            <div class="row">
+                <div class="col">
+                    <div class="container accordion accordion-flush m-5" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Votre panier
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellendus ratione enim alias voluptates laborum, veniam ad. Cumque, nam veniam dolorem hic.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Politiques de retour
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic minima alias quibusdam quaerat aliquam voluptatum possimus, nisi sapiente consequuntur autem, expedita voluptas ratione eius id animi ex est magnam repellat?</div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Frais de livraison
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sint magni optio incidunt sequi, voluptatum corrupti necessitatibus eveniet.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="row bg-img-creation">
+                <div class="container text-center p-5">
+                    <h2 class="display-6 fw-bold">Mots des créateurs</h2>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iusto sapiente soluta quibusdam reiciendis tenetur iure nulla.</i></p>
+                    <hr>
+                    <p class="display-6" onclick="changeText(this)">Cliquez pour en apprendre plus.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+		<section id="banner-footer">
+			<div class="bg-body-secondary">
+				<div class="col">
+					<div class="bg-img-social text-center p-3">
+						<div class="display-5">
+							<img class="p-2" src="img/salenjoual-logo.png" width="150" alt="Logo de l'entreprise">
+							<p>Visitez-nous sur nos réseaux sociaux</p>
+						</div>
+						<div class="icon-social m-2">
+							<a href="#"><img src="img/facebook-logo.png" width="40" height="40" alt="Logo Facebook"></a>
+							<a href="#"><img src="img/instagram-logo.png" width="40" height="40" alt="Logo Facebook"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="container text-center text-md-start mt-5">
+					<div class="row mt-3">
+						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold">SAL' EN JOUAL</h6>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rem deserunt sapiente ab iusto molestiae fugit recusandae soluta aliquid.</p>
+						</div>
+						
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold">Produits</h6>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+							<div class="footer-link">
+								<p><a href="#" class="text-body text-decoration-none">Adultes</a></p>
+								<p><a href="#" class="text-body text-decoration-none">Enfants</a></p>
+								<p><a href="#" class="text-body text-decoration-none">Accessoires</a></p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold">liens utiles</h6>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+							<div class="footer-link">
+								<p><a href="#" class="text-body text-decoration-none">Votre panier</a></p>
+								<p><a href="#" class="text-body text-decoration-none">Politiques de retour</a></p>
+								<p><a href="#" class="text-body text-decoration-none">Frais de livraison</a></p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<h6 class="text-uppercase fw-bold">Nous joindre</h6>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto bg-secondary" style="width: 60px; height: 6px">
+							<p><img src="img/tweeter-logo.png" width="25" height="25" alt="Twitter icon">123 chemin, Saguenay (Canada)</p>
+							<p><img src="img/message-logo.png" width="25" height="25" alt="mail icon"> info@salenjoual.com</p>
+							<p><img src="img/phone-logo.png" width="25" height="25" alt="phone icon">+ 1 (666) 666-6666</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="text-center p-3 bg-dark bg-gradient display-6">
+							<p class="text-white-50">Travail pratique 3 | Julie Tétreault-Lefrançois</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+  
+    <script src="js/product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
